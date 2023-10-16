@@ -7,7 +7,7 @@
 }
 
 body {
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Roboto', sans-serif;  
 }
 
 .header {
@@ -30,16 +30,22 @@ body {
 }
 
 .header-input {
+   width: 177px;
    margin-left: 22px;
+}
+
+.header-input::placeholder {
+   font-size: 18px;
+   color: #A5A5A5;
 }
 
 .header-nav {
    margin-left: auto;
+   margin-right: 44px;
 }
 
 .header-nav__list {
    display: flex;
-   margin-right: 44px;
 }
 
 .header-nav__item + .header-nav__item {
@@ -48,20 +54,24 @@ body {
 
 .header-nav__item--link {
    color: var(--black);
+   font-size: 18px;
 }
 
 .header-sign-in {
    display: flex;
+   align-items:center
 }
 
 .header-sign-in__link {
-   padding: 41px 34px;
+   padding: 42px 34px;
    color: var(--blue);
    border-left: 1px solid var(--grey);
+   font-size: 18px;
 }
 
 .header-sign-in__link--login {
-   padding: 41px 50px;
+   padding: 44px 50px;
    color: var(--white);
    background: var(--blue);
+   font-size: 18px;
 }
