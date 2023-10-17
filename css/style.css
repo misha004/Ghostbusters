@@ -4,17 +4,23 @@
    --darkblack: #000;
    --blue: #5671F6;
    --grey: #D4D4D4;
+   --lightgrey:  #A5A5A5;
 }
 
 body {
    font-family: 'Roboto', sans-serif;  
 }
 
+.container {
+   max-width: 1130px;
+   margin: 0 auto;
+}
+
 .header {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   /* padding: 41px 0; */
+   margin-bottom: 80px;
    border-bottom: 1px solid var(--grey);
 }
 
@@ -75,3 +81,134 @@ body {
    background: var(--blue);
    font-size: 18px;
 }
+
+/* Intro */
+
+.intro {
+   border-bottom: 1px solid var(--grey);
+}
+
+.intro-inner {
+   display: flex;
+}
+
+.intro-promo {
+   margin-bottom: 80px;
+}
+
+.intro-promo__watch {
+   width: 358px;
+   padding: 24px 0px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: 1px solid var(--grey);
+   border-radius: 0px 0px 5px 5px;
+}
+
+.intro-promo__watch--icon {
+   margin-right: 14px;
+   cursor: pointer;
+}
+.intro-promo__watch--text {
+   width: 157px;
+   font-size: 16px;
+   color: var(--blue);
+}  
+
+.intro-text {
+   margin-left: 60px;
+}
+
+.intro-text__title {
+   width: 491px;
+   font-size: 36px;
+   font-weight: 900;
+   color: var(--black);
+   margin-bottom: 16px;
+}
+
+.intro-text__subtitle {
+   font-size: 18px;
+   color: var(--lightgrey);
+   margin-bottom: 32px;
+}
+
+.intro-text__description {
+   width: 514px;
+   font-size: 14px;
+   line-height: 21px;
+   color: var(--darkblack);
+   margin-bottom: 50px;
+}
+
+.intro-text__info {
+   display: flex;
+   margin-bottom: 50px;
+}
+
+.intro-text__block:nth-child(3) {
+   margin-left: 40px;
+}
+
+.intro-text__info--object {
+   font-size: 16px;
+   font-weight: 700;
+   color: var(--black);
+}
+
+.intro-text__info--object + .intro-text__info--object {
+   margin-top: 16px;
+}
+
+.intro-text__info--subject {
+   font-size: 16px;
+   margin-left: 30px;
+}
+
+.intro-text__info--subject + .intro-text__info--subject {
+   margin-top: 16px;
+}
+
+.intro-text__votes {
+   display: flex;
+}
+
+.intro-text__votes-percent {
+   padding: 34px 24px;
+   font-size: 28px;
+   font-weight: 700;
+   color: var(--blue);
+   border: 1px solid var(--blue);
+   border-radius: 10px;
+}
+
+.intro-text__votes-block {
+   margin-left: 30px;
+}
+
+.intro-text__votes-rate {
+   font-size: 18px;
+   font-weight: 700;
+   color: var(--black);
+   margin: 10px 0;
+}
+
+.intro-text__votes-name {
+   font-size: 16px;
+   color: var(--black);
+}
+
+.intro-text__votes-name + .intro-text__votes-name {
+   margin-top: 10px;
+}
+
+.intro-text__votes-text {
+   font-size: 16px;
+   font-weight: 700;
+   color: var(--black);
+}
+
+
+
+
