@@ -262,6 +262,42 @@ body {
    color: var(--grey);
 }
 
+/* Footer */
+
+.footer {
+   padding: 72px 0 102px 0;
+   background: #f3f3f3;
+}
+
+.footer-title {
+   font-size: 24px;
+   font-weight: 900;
+   color: var(--darkblack);
+   margin-bottom: 65px;
+}
+
+.footer-sections {
+   display: flex;
+   gap: 30px;
+}
+
+.footer-sections__item {
+   padding: 38px;
+   background: #fff;
+   width: 25%;
+   border-radius: 5px;
+}
+
+.footer-sections__item--date {
+   color: var(--darkblack);
+   margin-bottom: 14px;
+}
+
+.footer-sections__item--text {
+   font-weight: 900;
+}
+
+
 
 
 
