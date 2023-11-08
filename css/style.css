@@ -82,6 +82,14 @@ body {
    font-size: 18px;
 }
 
+.burger-menu {
+   display: none;
+}
+
+.popup {
+   display: none;
+}
+
 /* Intro */
 
 .intro {
@@ -306,7 +314,6 @@ body {
    .header {
       margin-bottom: 30px;
       padding: 20px 28px;
-
    }
 
    .header-logo {
@@ -315,7 +322,7 @@ body {
    }
 
    .header-search {
-
+      margin-left: auto;
    }
 
    .header-input {
@@ -329,6 +336,94 @@ body {
    .header-sign-in {
       display: none;
    }
+
+   .burger-menu {
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-left: 32px;
+      background: none;
+   }
+
+   .burger-line {
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+      position: relative;
+      transition: .3s;
+   }
+
+   .burger-line:nth-child(1) {
+      top: 2px;
+      transform: translateY(-5px);
+   }
+
+   .burger-line:nth-child(3) {
+      bottom: 2px;
+      transform: translateY(5px);
+   }
+
+   .burger-menu.active .burger-line:nth-child(1) {
+      transform: rotate(45deg);
+   }
+
+   
+   .burger-menu.active .burger-line:nth-child(2) {
+      opacity: 0;   
+   }
+
+   .burger-menu.active .burger-line:nth-child(3) {
+      transform: rotate(-45deg);
+   }
+
+   body.noscroll {
+      overflow: hidden;
+   }
+
+   .popup {
+      display: block;
+      position: fixed;
+      top: 64px;
+      right: -100%;
+      width: 100%;
+      height: 100%;
+      background: #5671F6;
+      transition: .4s;
+   }
+
+   .popup.open {
+      right: 0;
+   }
+
+   .popup .header-nav {
+      width: 100%;
+      height: 100%;
+      display: block;
+      margin-top: 130px;
+   }
+
+   .popup .header-nav__list {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .popup .header-nav__item {
+      margin-left: 0;
+   }
+
+   .popup .header-nav__item + .header-nav__item {
+      margin-top: 18px;
+   }
+
+   .popup .header-nav__item--link {
+      font-family: Roboto;
+      font-size: 18px;
+      color: #fff;
+   }
+
+
+
    /* Intro */
 
    .intro-inner {

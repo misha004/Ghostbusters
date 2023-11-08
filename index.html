@@ -26,7 +26,7 @@
          <input class="header-input" type="text" placeholder="Поиск по фильмам...">
       </div>
 
-      <nav class="header-nav">
+      <nav class="header-nav" id="nav">
          <ul class="header-nav__list">
             <li class="header-nav__item" >
                <a class="header-nav__item--link" href="#">Фильмы</a>
@@ -46,12 +46,20 @@
          </ul>
       </nav>
 
-      <div class="header-sign-in">
+      <div class="header-sign-in" id="nav">
             <a class="header-sign-in__link" href="#">Регистрация</a>
 
             <a class="header-sign-in__link--login" href="#">Войти</a>
       </div>
+
+      <button class="burger-menu" type="button" id="button">
+         <div class="burger-line"></div>
+         <div class="burger-line"></div>
+         <div class="burger-line"></div>
+      </button>
    </header>
+
+   <div class="popup" id="popup"></div>
 
    <!-- Intro -->
    <section class="intro">
@@ -256,5 +264,6 @@
          </ul>
       </div>
    </footer>
+   <script src="js/main.js"></script>
 </body>
 </html>
